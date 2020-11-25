@@ -8,6 +8,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.head {
+  min-height: 20vh;
+  background: #222;
+}
+
+/* Main Section */
 .main {
   width: 100%;
 }
@@ -22,14 +28,54 @@ body {
 }
 
 .menu-item {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
-  margin: 20px;
+  width: 20%;
+  margin: 50px 20px;
+  /* border: 2px solid black; */
 }
 
 .menu-item img {
   width: 100%;
+}
+
+.wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -20px;
+  left: 0;
+}
+.product-name {
+  position: absolute;
+  top: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  background: tomato;
+  color: #fff;
+  border-radius: 5px;
+}
+.price {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background: #222;
+  color: white;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.count {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Select Form */
+.select-category {
+}
+.select {
 }
