@@ -8,13 +8,12 @@ const BASE_URL = 'https://shop-products.herokuapp.com/api/v1/products'
 fetch(BASE_URL)
 .then(response => response.json())
 .then(data => {
-    // const products = data.products
-    // console.log(products);
-    const results = data.products.slice(0, 12)
-    console.log(results);
+    const products = data.products
+    //console.log(products);
+    // const results = data.products.slice(0, 12)
 
-    displayItems(results);
-    filterSelect(results)
+    displayItems(products);
+    filterSelect(products);
 })
 
 
