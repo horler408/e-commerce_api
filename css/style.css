@@ -76,6 +76,11 @@ body {
 
 /* Select Form */
 .select-category {
+  margin: 30px 70px;
+  height: 30px;
+  width: 200px;
 }
 .select {
+  height: 100%;
+  width: 100%;
 }
