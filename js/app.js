@@ -1,5 +1,5 @@
 // Accessing the DOM
-const itemContainer = document.querySelector(".main");
+const itemContainer = document.querySelector(".item-container");
 const countScore = document.querySelector(".count");
 
 const BASE_URL = 'https://shop-products.herokuapp.com/api/v1/products'
@@ -22,8 +22,8 @@ const displayItems = (items) => {
         return `<article class="menu-item" data-id="item">
         <a href="#" class="anchor"><img src=${item.image_url} alt="Flag Items" class="flags" /></a>
         <div class="wrapper">
-          <h4 class="country-name">${item.name}</h4>
-          <p class="population">Price: ${item.price}</p>
+          <h4 class="product-name">${item.name}</h4>
+          <p class="price">Price: ${item.price}</p>
         </div>
       </article>`;
       })
