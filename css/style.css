@@ -6,6 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -15,25 +16,27 @@ a {
 /* Head Section */
 .head {
   min-height: 20vh;
-  background: #222;
+  background: #fff;
 }
 
 .head img {
-  margin: 0 50px;
+  margin: 10px 50px;
 }
 
 .nav {
   display: flex;
   width: 50%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: 0 auto;
 }
 
 .nav-items {
 }
 
 .nav-items a {
-  color: #fff;
+  margin: 10px;
+  color: #222;
 }
 
 /* Main Section */
@@ -58,6 +61,7 @@ a {
   flex-direction: column;
   width: 20%;
   margin: 50px 20px;
+  background: #fff;
   /* border: 2px solid black; */
 }
 
