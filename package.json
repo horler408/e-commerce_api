@@ -1,0 +1,23 @@
+{
+  "name": "e-commerce_api",
+  "version": "1.0.0",
+  "description": "A simple mobile first image gallery API developed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horler408/e-commerce_api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horler408/e-commerce_api/issues"
+  },
+  "homepage": "https://github.com/horler408/e-commerce_api#readme",
+  "dependencies": {
+    "spinkit": "^2.0.1"
+  }
+}
