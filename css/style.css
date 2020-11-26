@@ -8,9 +8,32 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* Head Section */
 .head {
   min-height: 20vh;
   background: #222;
+}
+
+.head img {
+  margin: 0 50px;
+}
+
+.nav {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items {
+}
+
+.nav-items a {
+  color: #fff;
 }
 
 /* Main Section */
