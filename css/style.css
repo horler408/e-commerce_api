@@ -24,19 +24,7 @@ a {
 }
 
 .nav {
-  display: flex;
-  width: 50%;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 auto;
-}
-
-.nav-items {
-}
-
-.nav-items a {
-  margin: 10px;
-  color: #222;
+  display: none;
 }
 
 /* Main Section */
@@ -46,9 +34,6 @@ a {
 
 .item-container {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
   margin: 20px auto;
 }
@@ -59,35 +44,39 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 20%;
-  margin: 50px 20px;
+  width: 80%;
+  margin: 50px auto;
+  padding: 50px;
   background: #fff;
   /* border: 2px solid black; */
 }
 
 .menu-item img {
-  width: 100%;
+  width: 80%;
+  height: 150px;
 }
 
 .wrapper {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: -20px;
+  top: -10px;
   left: 0;
 }
 .product-name {
   position: absolute;
-  top: 100%;
+  top: 90%;
   height: 30px;
   padding: 5px 10px;
   background: tomato;
   color: #fff;
+  font-size: 14px;
   border-radius: 5px;
 }
 .price {
   position: absolute;
   top: 10px;
+  font-size: 14px;
   left: 0;
   background: #222;
   color: white;
@@ -98,14 +87,14 @@ a {
 
 .count {
   text-align: center;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 /* Select Form */
 .select-category {
-  margin: 30px 70px;
   height: 30px;
-  width: 200px;
+  width: 80%;
+  margin: 10px auto;
 }
 .select {
   height: 100%;
@@ -130,4 +119,98 @@ a {
 .hide-preloader {
   z-index: -999;
   visibility: hidden;
+}
+
+@media only screen and (min-width: 676px) {
+  /* Head Section */
+  .nav {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+
+  .nav-items {
+  }
+
+  .nav-items a {
+    margin: 10px;
+    color: #222;
+  }
+
+  /* Main Section */
+  .main {
+    width: 100%;
+  }
+
+  .item-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .menu-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    margin: 50px 20px;
+    padding: 50px;
+    background: #fff;
+    /* border: 2px solid black; */
+  }
+
+  .menu-item img {
+    width: 80%;
+    height: 150px;
+  }
+
+  .wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .product-name {
+    position: absolute;
+    top: 80%;
+    height: 50px;
+    padding: 5px 10px;
+    background: tomato;
+    color: #fff;
+    border-radius: 5px;
+  }
+  .price {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #222;
+    color: white;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .count {
+    text-align: center;
+    margin: 20px;
+  }
+
+  /* Select Form */
+  .select-category {
+    margin: 30px 70px;
+    height: 30px;
+    width: 200px;
+  }
+  .select {
+    height: 100%;
+    width: 100%;
+  }
 }
