@@ -24,7 +24,7 @@ const displayItems = (items) => {
         <a href="#" class="anchor"><img src=${item.image_url} alt="Flag Items" class="flags" /></a>
         <div class="wrapper">
           <h4 class="product-name">${item.name}</h4>
-          <p class="price">Price: ${item.price}</p>
+          <p class="price">Price: #${item.price}</p>
         </div>
       </article>`;
       })
