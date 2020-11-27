@@ -15,8 +15,14 @@ a {
 
 /* Head Section */
 .head {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
   min-height: 20vh;
   background: #fff;
+  /* opacity: 0.7; */
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 .head img {
@@ -29,7 +35,9 @@ a {
 
 /* Main Section */
 .main {
+  position: absolute;
   width: 100%;
+  top: 150px;
 }
 
 .item-container {
@@ -48,7 +56,6 @@ a {
   margin: 50px auto;
   padding: 50px;
   background: #fff;
-  /* border: 2px solid black; */
 }
 
 .menu-item img {
@@ -124,6 +131,9 @@ a {
 @media only screen and (min-width: 676px) {
   /* Head Section */
   .nav {
+    position: absolute;
+    right: 20px;
+    top: 50px;
     display: flex;
     width: 50%;
     justify-content: center;
@@ -132,16 +142,21 @@ a {
   }
 
   .nav-items {
+    height: 30px;
   }
 
   .nav-items a {
     margin: 10px;
+    padding: 10px 15px;
     color: #222;
+    background: #eee;
+    border-radius: 5px;
   }
 
   /* Main Section */
   .main {
     width: 100%;
+    top: 150px;
   }
 
   .item-container {
@@ -205,6 +220,8 @@ a {
 
   /* Select Form */
   .select-category {
+    position: absolute;
+    top: 0;
     margin: 30px 70px;
     height: 30px;
     width: 200px;
